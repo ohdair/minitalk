@@ -6,7 +6,7 @@
 /*   By: jaewpark <jaewpark@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 08:53:14 by jaewpark          #+#    #+#             */
-/*   Updated: 2021/09/27 21:05:57 by jaewpark         ###   ########.fr       */
+/*   Updated: 2021/09/28 11:21:57 by jaewpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,5 @@ int	main(void)
 	signal(SIGUSR1, handler_msg);
 	signal(SIGUSR2, handler_msg);
 	while (1)
-		usleep(500000);
+		pause();
 }

@@ -6,13 +6,13 @@
 /*   By: jaewpark <jaewpark@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 09:46:43 by jaewpark          #+#    #+#             */
-/*   Updated: 2021/09/27 21:05:43 by jaewpark         ###   ########.fr       */
+/*   Updated: 2021/09/28 11:40:11 by jaewpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/client.h"
 
-void	send_message(t_putStr *info)
+void	send_msg(t_putStr *info)
 {
 	int	i;
 	int	current_bit;
@@ -26,15 +26,10 @@ void	send_message(t_putStr *info)
 		{
 			bit_temp = info->arg[i] >> (7 - current_bit) & 1;
 			if (bit_temp == 0)
-			{
 				kill(info->pid, SIGUSR1);
-				usleep(30);
-			}
 			else if (bit_temp == 1)
-			{
 				kill(info->pid, SIGUSR2);
-				usleep(30);
-			}
+			usleep(30);
 			current_bit++;
 		}
 		usleep(200);
@@ -48,6 +43,6 @@ int	main(int argc, char *argv[])
 
 	sendErr(&info, argc, argv);
 	info.arg = argv[2];
-	send_message(&info);
+	send_msg(&info);
 	return (0);
 }
