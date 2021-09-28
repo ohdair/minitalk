@@ -6,11 +6,11 @@
 /*   By: jaewpark <jaewpark@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 10:54:44 by jaewpark          #+#    #+#             */
-/*   Updated: 2021/09/27 21:05:41 by jaewpark         ###   ########.fr       */
+/*   Updated: 2021/09/28 16:19:14 by jaewpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/client.h"
+#include "client.h"
 
 void	sendErr(t_putStr *info, int argc, char *argv[])
 {

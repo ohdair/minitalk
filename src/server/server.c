@@ -6,11 +6,11 @@
 /*   By: jaewpark <jaewpark@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 08:53:14 by jaewpark          #+#    #+#             */
-/*   Updated: 2021/09/28 11:21:57 by jaewpark         ###   ########.fr       */
+/*   Updated: 2021/09/28 16:19:28 by jaewpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/server.h"
+#include "server.h"
 
 static void	handler_msg(int sig)
 {

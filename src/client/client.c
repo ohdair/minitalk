@@ -6,17 +6,17 @@
 /*   By: jaewpark <jaewpark@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 09:46:43 by jaewpark          #+#    #+#             */
-/*   Updated: 2021/09/28 11:40:11 by jaewpark         ###   ########.fr       */
+/*   Updated: 2021/09/28 16:19:57 by jaewpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/client.h"
+#include "client.h"
 
-void	send_msg(t_putStr *info)
+static void	send_msg(t_putStr *info)
 {
 	int	i;
 	int	current_bit;
-	int bit_temp;
+	int	bit_temp;
 
 	i = 0;
 	while (info->arg[i])
@@ -32,7 +32,7 @@ void	send_msg(t_putStr *info)
 			usleep(30);
 			current_bit++;
 		}
-		usleep(200);
+		usleep(100);
 		i++;
 	}
 }

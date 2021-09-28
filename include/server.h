@@ -6,21 +6,21 @@
 /*   By: jaewpark <jaewpark@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 09:30:57 by jaewpark          #+#    #+#             */
-/*   Updated: 2021/09/27 19:31:44 by jaewpark         ###   ########.fr       */
+/*   Updated: 2021/09/28 16:18:30 by jaewpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _SERVER_
-# define _SERVER_
+#ifndef SERVER_H
+# define SERVER_H
 
-#include <unistd.h>
-#include <signal.h>
-#include "util.h"
+# include <unistd.h>
+# include <signal.h>
+# include "util.h"
 
-typedef struct	s_character
+typedef struct s_character
 {
 	char	character;
-	int	current_bit;
+	int		current_bit;
 }	t_character;
 
 #endif

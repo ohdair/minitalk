@@ -6,7 +6,7 @@
 /*   By: jaewpark <jaewpark@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 09:09:10 by jaewpark          #+#    #+#             */
-/*   Updated: 2021/09/27 11:03:40 by jaewpark         ###   ########.fr       */
+/*   Updated: 2021/09/28 16:20:10 by jaewpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int len;
+	int	len;
 
 	if (!s)
 		return ;
